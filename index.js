@@ -68,14 +68,14 @@ commant
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////konwersja typów
 
 
-let x =Number( window.prompt("give value: "));
-console.log(typeof x,x++)
-console.log(x)
+// let x =Number( window.prompt("give value: "));
+// console.log(typeof x,x++)
+// console.log(x)
 
-//konwersja do stringa
-let z = 5
-z= String(z)
-console.log(z, typeof z)
+// //konwersja do stringa
+// let z = 5
+// z= String(z)
+// console.log(z, typeof z)
 
 
 
