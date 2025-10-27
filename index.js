@@ -142,7 +142,7 @@ commant
 // fruits.unshift("mangodb") // adding element to the begining
 // console.log(fruits);
 
-// fruits.shift() //deleting first element in the array
+// fruits. shift() //deleting first element in the array
 // console.log("shift: " + fruits);
 
 // fruits.pop("lichi") // poping last element
@@ -189,6 +189,62 @@ commant
 //////////////////////////////////////////////////////////////////////////////////////////////////////////map:
 /// map - wykonuje funkcję dla każedego z elementów tablicy i zwraca nową tablicę:
 
-tablica = [1,2,3,4]
-nowaTablica= tablica.map(x => x**2)
-console.log(nowaTablica)
+// tablica = [1,2,3,4]
+// nowaTablica= tablica.map(x => x**2)
+// console.log(nowaTablica)
+
+// tablica2 = ["a","b","c","d"]
+// console.log(tablica2)
+// upper = tablica2.map(n =>n.toUpperCase());
+// console.log(upper);
+
+
+// tablica3 = ["2025-12-15","2004-02-21","2020-07-15"]
+// rearanged = tablica3.map(func)
+// console.log(rearanged);
+
+// function func(element){
+//     const r = element.split('-')
+//     return `${r[2]}-${r[1]}-${r[0]}`;
+// }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////filter:
+
+// filter method returns a new array with a filtered out elements
+
+// let numbers = [1,2,3,4,5,6,7]
+// console.log(numbers)
+// let parzyste = numbers.filter(n=>n%2 ==2)
+// console.log([parzyste])
+
+// let strings = ["abc","ab","bcc","ddab"]
+// console.log(strings)
+// let filterd = strings.filter(n=> !n.includes('a'));
+// console.log(filterd);
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////reduce:
+
+// metoda reduce redukuje elementy tablicy do pojedyńczej wartości
+
+const prices = [1,30,26,67,100]
+const total = prices.reduce(sum);
+const max = prices.reduce(maxv)
+console.log(`$${total}`)
+console.log(`$${max}`)
+
+
+function maxv(acumulatror, element){
+    return Math.max(acumulatror,element)
+
+}
+function sum(acumulator,element){
+    return acumulator + element
+}
+
+
+
+
+
