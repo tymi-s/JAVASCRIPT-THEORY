@@ -80,15 +80,60 @@ commant
 
 
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////krótszy if else (ternary operator):
-age = 7;
+// age = 7;
 
-age ==18 ? console.log(age) : age >18 ? console.log("wiecej niz 18") : console.log("mniej niz 18");
+// age ==18 ? console.log(age) : age >18 ? console.log("wiecej niz 18") : console.log("mniej niz 18");
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////działąnia na stringach:
 
-let str = "mysia";
+let str = "mysia jest fajna";
 
-for(let i=0;i<str.length;i++){
-    console.log(`${str.charAt(i)}`);
-}
+console.log( str.charAt(0) ); // returns char at index 0
+console.log( str.indexOf("i") );// index of first occurence of "i"
+console.log( str.lastIndexOf("s") );// index of last occurence of "s"
+console.log( str.replace("mys","pies") );// replaces "mys" with "pies"
+console.log( str.length );// length of string
+console.log( str.trim() );// removes whitespace from both ends
+console.log( str.toUpperCase() )
+console.log( str.repeat(2) )// repeats the string 2 times
+console.log( str.startsWith(" ") )// checks if string starts with "mys"
+console.log ( str.includes("fajna") )// checks if string contains "fajna"
+
+let phoneNumber = "123-456-7890";
+phoneNumber = phoneNumber.replaceAll("-"," ");///////////////////////////
+console.log(phoneNumber);
+
+let p = "123"
+p = p.padStart(15,"0") ////////////////
+console.log(p)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////slicing strings:
+
+const fullname= "Tymon Szyler";
+let firstname= fullname.slice(0,5);
+let lastname= fullname.slice(fullname.indexOf("S"),fullname.length);
+
+console.log(firstname);
+console.log(lastname);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////mthod chaining:
+
+let message = "  hello World! Welcome to JavaScript programming.   "; 
+// usuniecie white spaces, przedi i za
+// wszystko do lowercase i pierwszy do uppercase
+
+message= message.trim().charAt(0).toUpperCase() + message.trim().slice(1).toLowerCase();    
+
+
+console.log(message);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////arrays:
+
+
+
+
+
+
+
